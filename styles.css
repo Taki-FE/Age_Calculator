@@ -199,6 +199,10 @@ img {
 /* Code for mobile screens. */
 
 @media (max-width: 500px) {
+  body {
+    padding: 40px 56px;
+  }
+
   .wrapper {
     height: fit-content;
     width: fit-content;
