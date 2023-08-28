@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Age calculator app</title>
+</head>
+<body>
+
+  <div class="wrapper">
+
+    <div class="top">
+      <p class="topp d-error">DAY</p>
+      <p class="topp m-error">MONTH</p>
+      <p class="topp y-error">YEAR</p>
+      <input type="number" name="day" min="1" max="31" placeholder="DD" class="day" required>
+      <input type="number" name="month" min="1" max="12" placeholder="MM" class="month" required>
+      <input type="number" name="year" min="1900" max="2023" placeholder="YYYY" class="year" required>
+
+      <div class="error-message day-error"></div>
+      <div class="error-message month-error"></div>
+      <div class="error-message year-error"></div>
+    </div>
+
+    <div class="divider"></div>
+
+  
+    <div class="icon submit">
+      <img src="data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='46' height='44' viewBox='0 0 46 44'%3E%3Cg fill='none' stroke='%23FFF' stroke-width='2'%3E%3Cpath d='M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44'/%3E%3C/g%3E%3C/svg%3E" alt="Dropdown">
+    </div>
+
+
+    <div class="bottom">
+      <div class="first"><span class="year-result results-container">- -</span> years</div>
+      <div class="second"><span class="month-result results-container">- -</span> months</div>
+      <div class="third"><span class="day-result results-container">- -</span> days</div>
+    </div>
+
+  </div>
+  
+  <script src="main.js"></script>
+</body>
+</html>
